@@ -10,7 +10,6 @@
 # - Change these to yours
 # Any other information needed?
 
-
 #### Workspace setup ####
 # Use R Projects, not setwd().
 library(haven)
