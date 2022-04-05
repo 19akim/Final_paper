@@ -4,7 +4,7 @@ subtitle: "My subtitle if needed"
 author: 
   - Ayoon Kim 
 thanks: "Code and data are available at: LINK."
-date: "`r format(Sys.time(), '%d %B %Y')`"
+date: "27 April 2022"
 abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
 keywords: ""
 output: 
