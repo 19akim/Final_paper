@@ -1,35 +1,35 @@
 #### Preamble ####
 # Purpose: Clean and prepare the data 
 # Author: Ayoon Kim
-# Data: 3 January 2021
-# Contact: rohan.alexander@utoronto.ca [PROBABLY CHANGE THIS ALSO!!!!]
+# Data: 27 April 2021
+# Contact: ayoon.kim@mail.utoronto.ca
 # License: MIT
 # Pre-requisites: 
-# - Need to have downloaded the ACS data and saved it to inputs/data
-# - Don't forget to gitignore it!
-# - Change these to yours
-# Any other information needed?
+# - Need to have downloaded the Toronto's homicide data and saved it to inputs/data
+
 
 
 #### Workspace setup ####
-# Use R Projects, not setwd().
 library(haven)
 library(tidyverse)
 # Read in the raw data. 
 raw_data <- readr::read_csv("inputs/data/homicide.csv")
-# Just keep some variables that may be of interest (change 
-# this depending on your interests)
+
 names(raw_data)
 
 reduced_data <- 
   raw_data %>% 
-  select(first_col, 
-         second_col)
-rm(raw_data)
+  select(Division, 
+         Homicide_Type,
+         Hood_ID,
+         Neighbourhood,
+         Occurrence_Date,
+         Occurrence_year)
+
          
+reduced_data
 
-#### What's next? ####
-
+write_csv(reduced_data, "outputs/data/prepared_homicide.csv")
 
 
          
