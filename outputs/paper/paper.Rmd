@@ -283,9 +283,6 @@ There are some possible weaknesses in regards to this analysis. The data has lim
 8. *Any other comments?*
 	- None
 
-# Additional details
-
-
 
 
 \newpage
